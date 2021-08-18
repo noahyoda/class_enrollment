@@ -1,15 +1,15 @@
-import addStudent
-import removeStudent
+import room
 
 print("Hello and welcome to my python enrollment script")
+classroom = []
 
 while True:
     print("What would you like to do?\n1) Add a student\n2) Remove a student\n3) exit program")
     choice = input()
     if choice == 1:
-        addStudent
+        room.addStudent(classroom)
     elif choice == 2:
-        removeStudent
+        room.removeStudent(classroom)
     elif choice == 3:
         break
     else:

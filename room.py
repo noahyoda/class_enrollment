@@ -20,10 +20,15 @@ def removeStudent(room):
     oldStudent = contains(room, stuName)
     if oldStudent != False:
         room.remove(oldStudent)
-        print("Student was removed!\n")
+        print(oldStudent.name + " was removed!\n")
     else:
         print("Error, student does not exist yet")
 
+
+def listStudents(list):
+    for student in list:
+        text = student.name + "\t" + student.grade
+        print(text)
 
 def contains(list, name):
     for student in list:
